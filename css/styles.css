@@ -1,9 +1,9 @@
 /* Variables */
 :root {
     --primary-green: #3c7f2f;
-    --dark-green: #072701;
-    --light-green: #012724;
+    --dark-green: #012724;
     --white: #fff;
+    --dark-grey: #111;
 }
 
 /* Resets */
@@ -28,7 +28,7 @@ p,
 a {
     font-size: 1.1rem;
     line-height: 1.4;
-    color: #111;
+    color: var(--dark-grey);
 }
 
 .container,
@@ -87,8 +87,7 @@ a {
 }
 
 .user-social-links a {
-    color: var(--primary-green);
-    color: var(--light-green);
+    color: var(--dark-green);
     transition: all 0.3s ease;
 }
 

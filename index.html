@@ -21,7 +21,81 @@
 <body>
     <main>
         <div class="container">
-            Profile card injected using JavaScript goes here
+            <article class="profile-card" data-testid="test-profile-card">
+                <!-- Profile card header-->
+                <header class="profile-card__header">
+                    <figure class="user-avatar">
+                        <img src="assets/Udhe Austine Ogaga.jpg" alt="Udhe Austine Ogaga's avatar"
+                            data-testid="test-user-avatar">
+                    </figure>
+                    <h2 class="user-name" data-testid="test-user-name">Udhe Austine Ogaga</h2>
+                    <p class="user-time" data-testid="test-user-time" id="user-time"></p>
+
+                    <!-- User social links-->
+                    <nav>
+                        <ul class="user-social-links" data-testid="test-user-social-links">
+                            <li>
+                                <a href="https://x.com/austineudhe" target="_blank" rel="noopener noreferrer"
+                                    data-testid="test-user-social-x">
+                                    <i class="fab fa-x-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://linkedin.com/in/udhe-austine-ogaga" target="_blank"
+                                    rel="noopener noreferrer" data-testid="test-user-social-linkedin">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/Udhe.austine" target="_blank"
+                                    rel="noopener noreferrer" data-testid="test-user-social-facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://tiktok.com/@austinet_" target="_blank" rel="noopener noreferrer"
+                                    data-testid="test-user-social-tiktok">
+                                    <i class="fab fa-tiktok"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </header>
+
+                <!-- Profile card main-->
+                <main class="profile-card__main">
+                    <section>
+                        <h3 class="user-bio-header" data-testid="test-user-bio-header">Bio</h3>
+                        <p class="user-bio" data-testid="test-user-bio">
+                            A detail-oriented Frontend Developer with passion for crafting user-tailored and
+                            visually stunning web applications. Proficient in HTML, CSS, JavaScript and modern
+                            frameworks like ReactJS and NextJS.
+                        </p>
+                    </section>
+
+                    <!-- User Hobbies and Dislikes sections -->
+                    <div class="user-hobbies-and-dislikes-container">
+                        <section>
+                            <h3 data-testid="test-user-hobbies-header">Hobbies</h3>
+                            <ul class="user-hobbies" data-testid="test-user-hobbies">
+                                <li data-testid="test-user-hobby-football">Football</li>
+                                <li data-testid="test-user-hobby-music">Music</li>
+                                <li data-testid="test-user-hobby-movies">Movies </li>
+                                <li data-testid="test-user-hobby-reading">Reading</li>
+                            </ul>
+                        </section>
+                        <section>
+                            <h3 data-testid="test-user-dislikes-header">Dislikes</h3>
+                            <ul class="user-dislikes" data-testid="test-user-dislikes">
+                                <li data-testid="test-user-dislike-disrespect">Disrespect</li>
+                                <li data-testid="test-user-dislike-corruption">Corruption</li>
+                                <li data-testid="test-user-dislike-oppression">Oppression</li>
+                                <li data-testid="test-user-dislike-deceit">Deceit</li>
+                            </ul>
+                        </section>
+                    </div>
+                </main>
+            </article>
         </div>
     </main>
     <script src="js/app.js"></script>
