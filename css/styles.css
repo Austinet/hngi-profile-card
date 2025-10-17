@@ -1,0 +1,146 @@
+/* Variables */
+:root {
+    --primary-green: #3c7f2f;
+    --dark-green: #072701;
+    --light-green: #012724;
+    --white: #fff;
+}
+
+/* Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* General style rules */
+body {
+    background: var(--primary-green);
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
+li,
+p,
+a {
+    font-size: 1.1rem;
+    line-height: 1.4;
+    color: #111;
+}
+
+.container,
+.container2 {
+    padding: 1.5rem 1rem;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+/* Profile card */
+.profile-card {
+    background: var(--white);
+    max-width: 465px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.3rem;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.profile-card__header {
+    text-align: center;
+    min-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.profile-card h2,
+.profile-card h3 {
+    color: var(--primary-green);
+}
+
+.user-avatar img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 100%;
+    border: 2px solid var(--primary-green);
+}
+
+.user-name {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.user-social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.2rem;
+}
+
+.user-social-links a {
+    color: var(--primary-green);
+    color: var(--light-green);
+    transition: all 0.3s ease;
+}
+
+.user-social-links a:hover {
+    color: var(--primary-green);
+}
+
+.user-bio-header {
+    display: none;
+}
+
+.user-bio {
+    text-align: center;
+    margin-bottom: 1.3rem;
+}
+
+.user-hobbies-and-dislikes-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.user-hobbies-and-dislikes-container h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.user-hobbies-and-dislikes-container ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+
+/* Larger screens */
+@media (min-width: 768px) {
+    .profile-card {
+        max-width: 700px;
+        padding: 2rem;
+        border-radius: 15px;
+        flex-direction: row;
+        gap: 2.8rem;
+    }
+
+    .user-bio-header {
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+
+    .user-bio {
+        text-align: left;
+    }
+}
